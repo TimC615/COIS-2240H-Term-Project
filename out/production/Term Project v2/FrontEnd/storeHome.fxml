@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="storeHome" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="900.0" minWidth="1200.0" prefHeight="900.0" prefWidth="1200.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="FrontEnd.Controller">
+  <children>
+    <AnchorPane prefHeight="850.0" prefWidth="1200.0">
+      <children>
+        <MenuBar layoutX="0.0" layoutY="0.0" prefHeight="46.0" prefWidth="1200.0">
+          <menus>
+            <Menu mnemonicParsing="false" text="">
+              <graphic>
+                <Button mnemonicParsing="false" onAction="#loadHome" text="Home" />
+              </graphic>
+            </Menu>
+            <Menu mnemonicParsing="false" text="">
+              <graphic>
+                <MenuButton mnemonicParsing="false" text="Search Item Type">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#loadSearchResults" text="CPUs" />
+                    <MenuItem mnemonicParsing="false" onAction="#loadSearchResults" text="GPUs" />
+                    <MenuItem mnemonicParsing="false" onAction="#loadSearchResults" text="Motherboards" />
+                    <MenuItem mnemonicParsing="false" onAction="#loadSearchResults" text="RAM" />
+                    <MenuItem mnemonicParsing="false" onAction="#loadSearchResults" text="Power Supplies" />
+                    <MenuItem mnemonicParsing="false" onAction="#loadSearchResults" text="Case Fans" />
+                    <MenuItem mnemonicParsing="false" onAction="#loadSearchResults" text="HDDs" />
+                    <MenuItem mnemonicParsing="false" onAction="#loadSearchResults" text="SSDs" />
+                    <MenuItem mnemonicParsing="false" onAction="#loadSearchResults" text="Cases" />
+                  </items>
+                </MenuButton>
+              </graphic>
+              <items>
+                <MenuItem mnemonicParsing="false" text="Delete" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="">
+              <graphic>
+                <TextField onKeyPressed="#loadSearchResults" prefHeight="20.0" prefWidth="500.0" />
+              </graphic>
+              <items>
+                <MenuItem mnemonicParsing="false" text="About">
+                  <graphic>
+                    <Button mnemonicParsing="false" text="Button" />
+                  </graphic>
+                </MenuItem>
+              </items>
+            </Menu>
+          </menus>
+        </MenuBar>
+        <Label alignment="CENTER" layoutX="0.0" layoutY="61.0" prefHeight="46.0" prefWidth="1200.0" text="Welcome to TnT Technology!" textAlignment="LEFT">
+          <font>
+            <Font name="Arial Bold" size="30.0" />
+          </font>
+        </Label>
+        <Group id="Group" layoutX="491.0" layoutY="107.0" scaleX="1.0" scaleY="1.0">
+          <children>
+            <Label layoutX="0.0" layoutY="23.0" minWidth="49.0" prefHeight="682.0" prefWidth="59.0" text="FEATURED" underline="false" wrapText="true">
+              <font>
+                <Font name="System Bold" size="60.0" fx:id="x1" />
+              </font>
+            </Label>
+            <Label font="$x1" layoutX="181.0" layoutY="23.0" minWidth="49.0" prefHeight="682.0" prefWidth="59.0" text="PRODUCTS" underline="false" wrapText="true" />
+          </children>
+        </Group>
+        <Group id="Group" layoutX="68.0" layoutY="130.0">
+          <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="330.0" layoutX="0.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="330.0">
+              <fill>
+                <Color blue="0.624" green="0.624" red="0.624" fx:id="x2" />
+              </fill>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="248.00009155273438" layoutX="14.0" layoutY="11.0" stroke="BLACK" strokeType="INSIDE" width="305.0" />
+          </children>
+        </Group>
+        <Group id="Group" layoutX="68.0" layoutY="482.0">
+          <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x2" height="330.0" layoutX="0.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="330.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="248.00009155273438" layoutX="14.0" layoutY="11.0" stroke="BLACK" strokeType="INSIDE" width="305.0" />
+          </children>
+        </Group>
+        <Group id="Group" layoutX="816.0" layoutY="482.0">
+          <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x2" height="330.0" layoutX="0.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="330.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="248.00009155273438" layoutX="14.0" layoutY="11.0" stroke="BLACK" strokeType="INSIDE" width="305.0" />
+          </children>
+        </Group>
+        <Group id="Group" layoutX="816.0" layoutY="130.0">
+          <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x2" height="330.0" layoutX="0.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="330.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="248.00009155273438" layoutX="14.0" layoutY="11.0" stroke="BLACK" strokeType="INSIDE" width="305.0" />
+          </children>
+        </Group>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

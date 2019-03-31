@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="searchResults" prefHeight="850.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="FrontEnd.Controller">
+  <children>
+    <VBox layoutX="0.0" layoutY="0.0" prefHeight="874.0" prefWidth="1200.0" spacing="20.0">
+      <children>
+        <MenuBar prefWidth="1200.0000999999975">
+          <menus>
+            <Menu mnemonicParsing="false" text="">
+              <graphic>
+                <Button mnemonicParsing="false" onAction="#loadHome" text="Home" />
+              </graphic>
+            </Menu>
+            <Menu mnemonicParsing="false" text="">
+              <graphic>
+                <MenuButton mnemonicParsing="false" text="Search Item Type">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="CPUs" />
+                    <MenuItem mnemonicParsing="false" text="GPUs" />
+                    <MenuItem mnemonicParsing="false" text="Motherboards" />
+                    <MenuItem mnemonicParsing="false" text="RAM" />
+                    <MenuItem mnemonicParsing="false" text="Power Supplies" />
+                    <MenuItem mnemonicParsing="false" text="Case Fans" />
+                    <MenuItem mnemonicParsing="false" text="HDDs" />
+                    <MenuItem mnemonicParsing="false" text="SSDs" />
+                    <MenuItem mnemonicParsing="false" text="Cases" />
+                  </items>
+                </MenuButton>
+              </graphic>
+              <items>
+                <MenuItem mnemonicParsing="false" text="Delete" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Search">
+              <graphic>
+                <TextField prefHeight="20.0" prefWidth="500.0" />
+              </graphic>
+              <items>
+                <MenuItem mnemonicParsing="false" text="About">
+                  <graphic>
+                    <Button mnemonicParsing="false" text="Button" />
+                  </graphic>
+                </MenuItem>
+              </items>
+            </Menu>
+          </menus>
+        </MenuBar>
+      </children>
+    </VBox>
+    <AnchorPane layoutX="0.0" layoutY="42.0" prefHeight="796.0" prefWidth="1207.0">
+      <children>
+        <Group id="Group" layoutX="14.0" layoutY="57.0">
+          <children>
+            <Label layoutX="0.0" layoutY="0.0" minWidth="49.0" prefHeight="682.0" prefWidth="59.0" text="SEARCH" underline="false" wrapText="true">
+              <font>
+                <Font name="System Bold" size="60.0" fx:id="x1" />
+              </font>
+            </Label>
+            <Label font="$x1" layoutX="82.0" layoutY="29.0" minWidth="49.0" prefHeight="682.0" prefWidth="59.0" text="RESULTS" underline="false" wrapText="true" />
+          </children>
+        </Group>
+        <ScrollBar layoutX="1177.0" layoutY="14.0" orientation="VERTICAL" prefHeight="832.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dfdfdf" height="832.0" layoutX="170.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="1007.0" />
+        <Group id="Group" layoutX="182.0" layoutY="24.0">
+          <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="199.0" layoutX="0.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="974.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="171.0" layoutX="14.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="171.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="260.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="654.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="260.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="487.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="714.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+          </children>
+        </Group>
+        <Group id="Group" layoutX="182.0" layoutY="233.0">
+          <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="199.0" layoutX="0.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="974.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="171.0" layoutX="14.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="171.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="260.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="654.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="260.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="487.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="714.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+          </children>
+        </Group>
+        <Group id="Group" layoutX="182.0" layoutY="445.0">
+          <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="199.0" layoutX="0.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="974.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="171.0" layoutX="14.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="171.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="260.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="654.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="260.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="487.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="714.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+          </children>
+        </Group>
+        <Group id="Group" layoutX="182.0" layoutY="654.0" />
+        <Group id="Group" layoutX="182.0" layoutY="661.0" scaleX="1.0" scaleY="1.0">
+          <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="185.0" layoutX="0.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="974.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="171.0" layoutX="14.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="171.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="260.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="654.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="260.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="487.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="714.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+          </children>
+        </Group>
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>
