@@ -1,0 +1,35 @@
+-------------------------
+Category ID's
+1: CPU
+2: GPU
+3: Motherboard
+4: RAM
+5: Power Supply
+6: Cooling
+7: Case
+8: Hard Drive
+9: Solid State Drive
+-------------------------
+Product Columns
+ProductID: Individual Products
+CategoryID: Defines which category it comes from
+Name: Name of item
+BrandName: ...
+Price: ...
+UserReviews: ...
+NumUsers: Number of users making reviews
+
+NumCores: Used only by CPU
+RamGigs: Used only by RAM
+PowerUsage: Used only by Power Supply
+HardStorageTB: Number of terabytes for a harddrive
+StorageGigs: Number of Gigabytes for a solid state
+
+Image: Image of each thing
+--------------------------
+SQL Statements
+NOTE: Might have to add some things in about RamGigs, or other specific categories available only to those products
+#Anything listed below is simply generic statements that might be used.
+SELECT Name, Price, UserReviews, NumUsers, Image FROM Products WHERE CategoryID = x #Statement is useful for grabbing multiple things from a category
+SELECT Name, Price, UserReviews, NumUsers, Image FROM Products WHERE CategoryID = x ORDER BY Price ASC #ASC returns lowest to highest, DESC returns highest to lowest, this is for ordering by pride
+SELECT Name, Price, UserReviews, NumUsers, Image FROM Products WHERE ProductID = 2 #For grabbing indiviudal products for pages
