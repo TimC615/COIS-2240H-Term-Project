@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="storeHome" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="900.0" minWidth="1200.0" prefHeight="900.0" prefWidth="1200.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="FrontEnd.Controller">
+  <children>
+    <AnchorPane prefHeight="850.0" prefWidth="1200.0">
+      <children>
+        <MenuBar layoutX="0.0" layoutY="0.0" prefHeight="46.0" prefWidth="1200.0">
+          <menus>
+            <Menu mnemonicParsing="false" text="">
+              <graphic>
+                <Button mnemonicParsing="false" onAction="#loadHome" text="Home" />
+              </graphic>
+            </Menu>
+            <Menu mnemonicParsing="false" text="">
+              <graphic>
+                <MenuButton mnemonicParsing="false" text="Search Item Type">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#loadSearchResults" text="CPUs" />
+                    <MenuItem mnemonicParsing="false" onAction="#loadSearchResults" text="GPUs" />
+                    <MenuItem mnemonicParsing="false" onAction="#loadSearchResults" text="Motherboards" />
+                    <MenuItem mnemonicParsing="false" onAction="#loadSearchResults" text="RAM" />
+                    <MenuItem mnemonicParsing="false" onAction="#loadSearchResults" text="Power Supplies" />
+                    <MenuItem mnemonicParsing="false" onAction="#loadSearchResults" text="Case Fans" />
+                    <MenuItem mnemonicParsing="false" onAction="#loadSearchResults" text="HDDs" />
+                    <MenuItem mnemonicParsing="false" onAction="#loadSearchResults" text="SSDs" />
+                    <MenuItem mnemonicParsing="false" onAction="#loadSearchResults" text="Cases" />
+                  </items>
+                </MenuButton>
+              </graphic>
+            </Menu>
+            <Menu mnemonicParsing="false" text="">
+              <graphic>
+                <Button mnemonicParsing="false" onAction="#exitStore" text="Exit Store" />
+              </graphic>
+            </Menu>
+            <Menu mnemonicParsing="false" text="">
+              <graphic>
+                <Button mnemonicParsing="false" onAction="#loadProductPage" text="Product Page" />
+              </graphic>
+            </Menu>
+          </menus>
+        </MenuBar>
+        <Label alignment="CENTER" layoutX="0.0" layoutY="61.0" prefHeight="46.0" prefWidth="1200.0" text="Welcome to TnT Technology!" textAlignment="LEFT">
+          <font>
+            <Font name="Arial Bold" size="30.0" />
+          </font>
+        </Label>
+        <Group id="Group" layoutX="518.0" layoutY="141.0">
+          <children>
+            <Label layoutX="0.0" layoutY="0.0" minWidth="49.0" prefHeight="682.0" prefWidth="52.0" text="FEATURED" underline="false" wrapText="true">
+              <font>
+                <Font name="System Bold" size="55.0" fx:id="x1" />
+              </font>
+            </Label>
+            <Label font="$x1" layoutX="131.0" layoutY="0.0" minWidth="49.0" prefHeight="682.0" prefWidth="59.0" text="PRODUCTS" underline="false" wrapText="true" />
+          </children>
+        </Group>
+        <AnchorPane id="AnchorPane" layoutX="68.0" layoutY="130.0">
+          <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="330.0" layoutX="0.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="330.0">
+              <fill>
+                <Color blue="0.624" green="0.624" red="0.624" fx:id="x2" />
+              </fill>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="217.00009155273438" layoutX="14.0" layoutY="11.0" stroke="BLACK" strokeType="INSIDE" width="304.9998779296875" />
+            <ImageView fx:id="image1" fitHeight="217.00009155273438" fitWidth="289.33344446218985" layoutX="20.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" />
+            <Button layoutX="100.0" layoutY="234.0" mnemonicParsing="false" onMouseClicked="#loadProductPage" prefHeight="30.0" prefWidth="129.0" text="Go to Product" />
+            <Group id="Group" layoutX="10.0" layoutY="278.0">
+              <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="37.0" layoutX="0.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="305.9998779296875" />
+                <Label fx:id="name1" layoutX="2.0" layoutY="0.0" minHeight="17.0001220703125" prefHeight="38.0" prefWidth="304.9998779296875" text="" textAlignment="CENTER">
+                  <font>
+                    <Font size="20.0" fx:id="x3" />
+                  </font>
+                </Label>
+              </children>
+            </Group>
+          </children>
+        </AnchorPane>
+        <AnchorPane id="AnchorPane" layoutX="794.0" layoutY="130.0">
+          <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x2" height="330.0" layoutX="0.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="330.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="217.00009155273438" layoutX="14.0" layoutY="11.0" stroke="BLACK" strokeType="INSIDE" width="304.9998779296875" />
+            <ImageView fx:id="image2" fitHeight="217.00009155273438" fitWidth="289.33344446218985" layoutX="20.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" />
+            <Button layoutX="100.0" layoutY="234.0" mnemonicParsing="false" onMouseClicked="#loadProductPage" prefHeight="30.0" prefWidth="129.0" text="Go to Product" />
+            <Group id="Group" layoutX="9.0" layoutY="278.0">
+              <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="37.0" layoutX="0.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="305.9998779296875" />
+                <Label fx:id="name2" font="$x3" layoutX="2.0" layoutY="0.0" minHeight="17.0001220703125" prefHeight="38.0" prefWidth="304.9998779296875" text="" textAlignment="CENTER" />
+              </children>
+            </Group>
+          </children>
+        </AnchorPane>
+        <AnchorPane id="AnchorPane" layoutX="794.0" layoutY="493.0">
+          <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x2" height="330.0" layoutX="0.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="330.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="217.00009155273438" layoutX="14.0" layoutY="11.0" stroke="BLACK" strokeType="INSIDE" width="304.9998779296875" />
+            <ImageView fx:id="image4" fitHeight="217.00009155273438" fitWidth="289.33344446218985" layoutX="20.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" />
+            <Button layoutX="100.0" layoutY="234.0" mnemonicParsing="false" onMouseClicked="#loadProductPage" prefHeight="30.0" prefWidth="129.0" text="Go to Product" />
+            <Group id="Group" layoutX="12.0" layoutY="278.0">
+              <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="37.0" layoutX="0.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="305.9998779296875" />
+                <Label id="name3" fx:id="name4" font="$x3" layoutX="2.0" layoutY="0.0" minHeight="17.0001220703125" prefHeight="38.0" prefWidth="304.9998779296875" text="" textAlignment="CENTER" />
+              </children>
+            </Group>
+          </children>
+        </AnchorPane>
+        <AnchorPane id="AnchorPane" layoutX="67.0" layoutY="493.0">
+          <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x2" height="330.0" layoutX="0.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="330.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="217.00009155273438" layoutX="14.0" layoutY="11.0" stroke="BLACK" strokeType="INSIDE" width="304.9998779296875" />
+            <ImageView fx:id="image3" fitHeight="217.00009155273438" fitWidth="289.33344446218985" layoutX="20.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" />
+            <Button layoutX="100.0" layoutY="234.0" mnemonicParsing="false" onMouseClicked="#loadProductPage" prefHeight="30.0" prefWidth="129.0" text="Go to Product" />
+            <Group id="Group" layoutX="13.0" layoutY="278.0">
+              <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="37.0" layoutX="0.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="305.9998779296875" />
+                <Label id="name4" fx:id="name3" font="$x3" layoutX="2.0" layoutY="0.0" minHeight="17.0001220703125" prefHeight="38.0" prefWidth="304.9998779296875" text="" textAlignment="CENTER" />
+              </children>
+            </Group>
+          </children>
+        </AnchorPane>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
